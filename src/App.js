@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
+import './app.css';
+import Navbar from './Navbar.js';
 
 class App extends Component {
   render() {
     return (
-      <div className="fl w-100">
-        <header className="">
-          <h1 className="f6">Hello World</h1>
-        </header>
-      </div>
+      <Navbar />
     );
   }
 }
