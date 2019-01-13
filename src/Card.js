@@ -1,7 +1,8 @@
 import React from 'react';
 
-const Card = ({ props }) => {
-    return <div className="white">Hello Card</div>
+const Card = ({ movies }) => {
+    console.log('here', movies[0])
+    return <h1 className="tc white">{ movies[0].title }</h1>
 }
 
 export default Card;
