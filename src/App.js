@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './app.css';
 import Navbar from './Navbar.js';
 import Card from './Card.js';
+import Cardlist from './Cardlist.js';
 
 class App extends Component {
   constructor() {
@@ -25,11 +26,12 @@ class App extends Component {
     <h1 className="tc white">Loading</h1> :
     (
       <div>
-        <Navbar />
-        <div className="fl w-100">
-          <h1 className="f3 tc white">List of Star Wars Films</h1>
+        <div className="tc fl w-100">
+          <Navbar />
+          <h1 className="f3 white">List of Star Wars Films</h1>
+          <Cardlist movies={films}/>
+          <Card movies={films}/>
         </div>
-        <Card movies={films}/>
       </div>
     );
   }
