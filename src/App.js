@@ -26,7 +26,7 @@ class App extends Component {
     <h1 className="tc white">Loading</h1> :
     (
       <div>
-        <div className="tc fl w-100">
+        <div className="w-100 tc">
           <Navbar />
           <h1 className="f3 white">List of Star Wars Films</h1>
           <Cardlist movies={films}/>
