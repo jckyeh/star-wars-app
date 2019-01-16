@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './app.css';
 import Navbar from './Navbar.js';
-import Card from './Card.js';
 import Cardlist from './Cardlist.js';
+import { posters } from './posters.js';
 
 class App extends Component {
   constructor() {
@@ -20,7 +20,6 @@ class App extends Component {
 
   render() {
     const { films } = this.state;
-    // console.log( films[0] )
 
     return (!films.length) ?
     <h1 className="tc white">Loading</h1> :
@@ -29,8 +28,7 @@ class App extends Component {
         <div className="w-100 tc">
           <Navbar />
           <h1 className="f3 white">List of Star Wars Films</h1>
-          <Cardlist movies={films}/>
-          <Card movies={films}/>
+          <Cardlist movies={films} posters={posters}/>
         </div>
       </div>
     );

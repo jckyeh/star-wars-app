@@ -1,8 +1,18 @@
 import React from 'react';
+import Card from './Card.js';
 
-const Cardlist = ({ movies }) => {
+const Cardlist = ({ movies, posters }) => {
     return (
-        <div className="f1 white">{ movies[1].title}</div>
+        movies.map((movie, index) => {
+            // console.log(movie.episode_id)
+            return (
+                <Card 
+                    key={movie.episode_id}
+                    film={movie}
+                    poster={posters[index]}
+                />
+            )
+        })
     )
 }
 
