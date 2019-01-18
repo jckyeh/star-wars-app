@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './app.css';
-import Navbar from './Navbar.js';
-import Cardlist from './Cardlist.js';
-import { posters } from './posters.js';
+import Navbar from '../components/Navbar.js';
+import Cardlist from '../components/Cardlist.js';
+import { posters } from '../posters.js';
 
 class App extends Component {
   constructor() {
